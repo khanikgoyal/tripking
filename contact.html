@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>TripKing</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- font awesome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- fonts -->
+  <link rel="stylesheet" href="font/fonts.css" />
+  <!-- normalize css -->
+  <link rel="stylesheet" href="css/normalize.css" />
+  <!-- custom css -->
+  <link rel="stylesheet" href="css/utility.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+
+  <script src="https://cdn.firebase.com/js/client/2.2.1/firebase.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <!-- navbar  -->
+  <nav class="navbar">
+    <div class="container flex">
+      <a href="index.html" class="site-brand"> Trip<span>KING</span> </a>
+
+      <button type="button" id="navbar-show-btn" class="flex">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div id="navbar-collapse">
+        <button type="button" id="navbar-close-btn" class="flex">
+          <i class="fas fa-times"></i>
+        </button>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="gallery.html" class="nav-link">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a href="blog.html" class="nav-link">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- end of navbar  -->
+
+  <!-- header -->
+  <header class="flex header-sm">
+    <div class="container">
+      <div class="header-title">
+        <h1>Contact</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus rerum
+          maxime enim odit illum in molestias beatae doloremque, ratione
+          optio.
+        </p>
+      </div>
+    </div>
+  </header>
+  <!-- header -->
+
+  <!-- contact section -->
+  <section id="contact" class="py-4">
+    <div class="container">
+      <div class="title-wrap">
+        <span class="sm-title">get in touch with us</span>
+        <h2 class="lg-title">contact us</h2>
+      </div>
+
+      <div class="contact-row">
+        <div class="contact-left">
+          <form id="contact-form" class="contact-form">
+            <input type="text" id="name" class="form-control" placeholder="Your name" />
+            <input type="text" id="email" class="form-control" placeholder="Your email" />
+            <textarea rows="4" id="msg" class="form-control" placeholder="Your message" style="resize: none"></textarea>
+            <input type="submit" id="submit" class="btn submit" value="Send message" />
+          </form>
+        </div>
+        <div class="contact-right my-2">
+          <div class="contact-item">
+            <span class="contact-icon flex">
+              <i class="fa fa-phone-alt"></i>
+            </span>
+            <div>
+              <span>Phone</span>
+              <p class="text">+01-584-886-009</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon flex">
+              <i class="fa fa-map-marked-alt"></i>
+            </span>
+            <div>
+              <span>Address</span>
+              <p class="text">102 East 22nd Street, NY</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon flex">
+              <i class="fa fa-envelope"></i>
+            </span>
+            <div>
+              <span>Message</span>
+              <p class="text">info@tripboss.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end of contact section -->
+
+  <!-- footer -->
+  <footer class="py-4">
+    <div class="container footer-row">
+      <div class="footer-item">
+        <a href="index.html" class="site-brand"> Trip<span>Boss</span> </a>
+        <p class="text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+          voluptates maiores nam vitae iusto. Placeat rem sint voluptas natus
+          exercitationem autem quod neque, odit laudantium reiciendis ipsa
+          suscipit veritatis voluptate.
+        </p>
+      </div>
+
+      <div class="footer-item">
+        <h2>Follow us on:</h2>
+        <ul class="social-links">
+          <li>
+            <a href="#">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fab fa-pinterest"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fab fa-google-plus"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-item">
+        <h2>Popular Places:</h2>
+        <ul>
+          <li><a href="#">Thailand</a></li>
+          <li><a href="#">Australia</a></li>
+          <li><a href="#">Maldives</a></li>
+          <li><a href="#">Switzerland</a></li>
+          <li><a href="#">Germany</a></li>
+        </ul>
+      </div>
+
+      <div class="subscribe-form footer-item">
+        <h2>Subscribe for Newsletter!</h2>
+        <form class="flex">
+          <input type="email" placeholder="Enter Email" class="form-control" />
+          <input type="submit" class="btn" value="Subscribe" />
+        </form>
+      </div>
+    </div>
+  </footer>
+  <!-- end of footer -->
+
+  <!-- js -->
+  <script src="js/script.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+  <!-- <script src="js/mess.js"></script> -->
+  <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyDBtjolYZ4bxHaUnixjyO8fAT2Au212HVA",
+      authDomain: "my-travel-website-f3a65.firebaseapp.com",
+      databaseURL: "https://my-travel-website-f3a65-default-rtdb.firebaseio.com",
+      projectId: "my-travel-website-f3a65",
+      storageBucket: "my-travel-website-f3a65.appspot.com",
+      messagingSenderId: "485848651047",
+      appId: "1:485848651047:web:84f3cd20518f0a69880502",
+      measurementId: "G-DZ7E6XETQF"
+    };
+
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+
+    //   reference the database
+    var contactFormDB = firebase.database().ref("my-travellers-db");
+    // const contactFormDB=firestore.collection('contactform')
+    document
+      .getElementById("contact-form")
+      .addEventListener("submit", submitForm);
+
+    function submitForm(e) {
+      e.preventDefault();
+
+      var name = getElementVar("name");
+      var email = getElementVar("email");
+      var msg = getElementVar("msg");
+
+      console.log(name, email, msg);
+
+      saveMessages(name, email, msg);
+
+      // // enable alert
+      // document.querySelector('.alert').style.display = 'block';
+
+      // // remove the alert
+      // setTimeout(() => {
+      //     document.querySelector('.alert').style.display = 'none';
+      // }, 3000);
+
+      // reset the form
+      document.getElementById('contact-form').reset();
+      alert("Message sent");
+    }
+
+    const saveMessages = (name, email, msgContent) => {
+      var newContectForm = contactFormDB.push();
+
+      newContectForm.set({
+        name: name,
+        email: email,
+        msgContent: msgContent,
+      });
+    };
+
+    const getElementVar = (id) => {
+      return document.getElementById(id).value;
+    };
+  </script>
+</body>
+
+</html>
